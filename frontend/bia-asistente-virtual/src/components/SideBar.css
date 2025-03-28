@@ -1,0 +1,21 @@
+
+.sidebar-option {
+    color: #99A1AD; /* Color plomo para las opciones no seleccionadas */
+    font-weight: 500;
+    padding: 10px 0;
+    text-decoration: none; /* Eliminar subrayado por defecto */
+    transition: color 0.3s, border-bottom 0.3s;
+    text-align: center; /* Asegurarse de que las opciones estén centradas */
+  }
+  
+  /* Estilo cuando una opción está seleccionada */
+  .sidebar-option.active {
+    color: #002DA0; /* Color azul cuando está seleccionada */
+    border-bottom: 2px solid #FF7800; /* Línea naranja debajo de la opción seleccionada */
+    font-weight: 600; /* Opcional: aumentar peso de la fuente para resaltar */
+  }
+  
+  /* Si quieres que el texto se oscurezca un poco cuando pasa el mouse */
+  .sidebar-option:hover {
+    color: #002DA0; /* Cambiar color al pasar el mouse */
+  }

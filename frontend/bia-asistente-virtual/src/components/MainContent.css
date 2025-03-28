@@ -1,0 +1,90 @@
+/* Estilos para el componente MainContent */
+
+/* Estilo general para las opciones */
+.option {
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Borde gris claro */
+    margin: 10px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .option:hover {
+    background-color: #f4f4f4; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Estilo para la opción seleccionada */
+  .option.selected {
+    border-bottom: 3px solid #ff7800; /* Línea naranja cuando está seleccionado */
+  }
+  
+  /* Estilo del título de la opción */
+  .option-title {
+    color: #002da0; /* Color gray3 (de tu especificación) */
+    font-size: 1.2rem;
+  }
+  
+  /* Estilos para el texto informativo debajo de la opción seleccionada */
+  .profile-info {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .profile-info1 {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 20px;
+    height: 600px;
+    text-align: center;
+    align-content: center;
+  }
+  
+  .profile-text {
+    color: #002DA0; /* Gray3 */
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el mensaje de BIA */
+  .bio-message p {
+    color: black;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Contenedor para los botones, alineados horizontalmente */
+  .button-container {
+    text-align: center;
+    margin: auto;
+    gap: 10px;  /* Añadimos un pequeño espacio entre los botones */
+    margin-top: 20px;
+  }
+  
+  /* Estilos para el botón */
+  .start-button {
+    background-color: #ff7800; /* Naranja */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    flex: 1; /* Para que ambos botones ocupen el mismo espacio */
+    font-size: 1rem;
+  }
+  
+  .start-button:hover {
+    background-color: #e46c00; /* Naranja más oscuro al pasar el mouse */
+  }
+
+  .svg-container{
+
+    text-align: center;
+  }
+  
