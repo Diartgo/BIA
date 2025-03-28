@@ -12,7 +12,7 @@ const SideBar = ({ setSelectedOption }) => {
 
   return (
     <Col xs={12} md={3} className="p-4">
-      <Nav defaultActiveKey="/home" className="flex-column d-flex justify-content-space-around">
+      <Nav defaultActiveKey="/home" className="flex-column d-flex  space-around">
         <Nav.Link 
           onClick={() => handleSelect('perfil')}
           className={`sidebar-option ${activeOption === 'perfil' ? 'active' : ''}`}

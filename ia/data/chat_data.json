@@ -1,0 +1,58 @@
+[
+    {
+        "type": "welcome",
+        "return_bia": [
+            "¡Genial, $name, te acompañaré en este camino! 🎉 Para ayudarte mejor, me gustaría conocer un poco más sobre tu situación.",
+            "📌 ¿Cómo quieres empezar?",
+            "1. Puedo analizar tus ingresos y gastos para sugerirte un plan personalizado.<br> 2.Puedes contarme a qué te dedicas y yo te ayudo a estructurar un ahorro adaptado a tu flujo de ingresos.<br> 3.Si tienes una meta de ahorro en mente, podemos crear juntas un plan para alcanzarla.<br> O si prefieres, puedo explicarte más sobre cómo funciona todo esto antes de que tomes una decisión."
+        ]
+    },
+    {
+        "type": "curiosity_statement",
+        "return_bia": [
+            "¡Por supuesto! 🙌 Estoy aquí para hacer que el ahorro sea más fácil y adaptado a tu realidad.",
+            "📌 ¿Cómo te ayudo a ahorrar?",
+            "🔹 Analizo tus ingresos y egresos, y te sugiero un ahorro que se ajuste a ti. <br>🔹 Te ayudo a aprovechar temporadas altas para ahorrar más y a reducirlo en meses difíciles. <br>🔹 Si tienes una meta de ahorro, puedo calcular un plan que encaje con tus ingresos. <br>🔹 Y si lo deseas, te puedo mostrar opciones de inversión para hacer crecer tu dinero más rápido.",
+            "Además, accedes a tasas preferenciales si decides invertir, y tu historial de ahorro podría ayudarte a mejorar tu perfil crediticio en el BCP, facilitando futuras oportunidades financieras.",
+            "📌 Comisiones y costos:",
+            "💰 Ahorrar con BIA no tiene comisiones. <br> 📈 Algunas opciones de inversión pueden tener costos asociados, pero siempre te avisaré antes.",
+            "📌 Asistencia constante:",
+            "📲 Estoy disponible 24/7 para resolver tus dudas y ayudarte a mejorar tu ahorro.",
+            "¿Tienes alguna duda en particular? Estoy aquí para responderte. 😊"
+        ]
+    },
+    {
+        "type": "preference_statement",
+        "return_bia": [
+            "¡Genial! 📊 Voy a revisar tu actividad reciente para identificar patrones en tus ingresos y gastos. Dame unos segundos… ¡Listo! Veo que tus ingresos varían mes a mes, pero también que realizas compras frecuentes con tu tarjeta. Para empezar sin que afecte tu presupuesto, te sugiero activar el Ahorro por Redondeo Inteligente.",
+            "🔹 ¿Cómo funciona? Cada vez que realices una compra, redondearemos el monto al siguiente múltiplo de S/1, S/5 o S/10 y ahorraremos automáticamente la diferencia. El redondeo se ajustará según tus ingresos, si tienes un mes con menos ingresos, se ahorra menos; si ganas más, se redondea más agresivamente.",
+            "¿Qué te parece?"
+        ]
+    },
+    {
+        "type": "example_request",
+        "return_bia": [
+            "¡Por supuesto! 😊 Imagina que hoy hiciste una compra de S/18.60. Dependiendo de tu situación financiera, el sistema redondeará el monto de distintas formas para ayudarte a ahorrar sin que lo sientas:",
+            "🔹 Si este mes tus ingresos fueron bajos, el redondeo será al siguiente múltiplo de S/1. Es decir, tu compra se ajusta a S/19 y ahorras S/0.40. <br>🔹 Si tuviste ingresos normales, aplicamos un redondeo al siguiente múltiplo de S/5. Entonces, tu compra se ajusta a S/20 y ahorras S/1.40. <br>🔹 Si este mes ganaste más de lo usual, podemos ser más agresivos con el ahorro y redondear al siguiente múltiplo de S/10. En este caso, tu compra se ajusta a S/30 y ahorras S/11.40."
+        ]
+    },
+    {
+        "type": "business_situation",
+        "return_bia": [
+            "¡Entiendo, $name! 👟 Analizando tu rubro, los meses con más ventas suelen ser marzo (inicio de clases), julio (Fiestas Patrias) y diciembre (Navidad). Durante esos meses, podrías aumentar tu ahorro para equilibrar los meses más bajos.",
+            "📌 Te recomiendo el Ahorro por Porcentaje Flexible, ya que ajusta el monto según tus ingresos: <br>🔹 Marzo, julio y diciembre: Ahorra un 20% de tus ingresos. <br>🔹 Meses regulares: Ahorra un 10%. <br>🔹 Meses flojos: Reduce a 5% o pausa el ahorro si es necesario."
+        ]
+    },
+    {
+        "type": "monthly_view_request",
+        "return_bia": [
+            "¡Por supuesto! Aquí tienes una vista mensual de cómo podrías organizar tu ahorro según tus ventas estimadas:"
+        ]
+    },
+    {
+        "type": "option_preference",
+        "return_bia": [
+            "¡Genial elección, Jasmin! 🎉 <br>Presiona el botón a continuación para activar tu ahorro por porcentaje flexible y empezar a alcanzar tu meta. 💰🚀"
+        ]
+    }
+]
