@@ -13,7 +13,7 @@ const App = () => {
     <Container fluid>
       <Row>
         <Header/>
-        <SideBar setSelectedOption={setSelectedOption} />
+
         <MainContent selectedOption={selectedOption} />
       </Row>
     </Container>

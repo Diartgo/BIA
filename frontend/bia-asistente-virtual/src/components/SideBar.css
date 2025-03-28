@@ -5,7 +5,7 @@
     padding: 10px 0;
     text-decoration: none; /* Eliminar subrayado por defecto */
     transition: color 0.3s, border-bottom 0.3s;
-    text-align: center; /* Asegurarse de que las opciones estén centradas */
+    justify-content: space-around;
   }
   
   /* Estilo cuando una opción está seleccionada */
@@ -18,4 +18,9 @@
   /* Si quieres que el texto se oscurezca un poco cuando pasa el mouse */
   .sidebar-option:hover {
     color: #002DA0; /* Cambiar color al pasar el mouse */
+  }
+
+  .menuchat{
+    display: flex;
+    justify-content: space-around;
   }

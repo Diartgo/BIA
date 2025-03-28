@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './ChatWithBIA.css';
-import { getOpenAIResponse } from './OpenAI';
 
 const ChatWithBIA = () => {
   const [messages, setMessages] = useState([
@@ -15,27 +14,34 @@ const ChatWithBIA = () => {
     }
   ]);
   const [userInput, setUserInput] = useState('');
-  const handleSendMessage = async () => {
+  const messagesEndRef = useRef(null);  // Ref para hacer scroll hasta el final
+
+  // Función para manejar el envío de mensajes
+  const handleSendMessage = () => {
     if (userInput.trim() === '') return;
 
-    // Agregar el mensaje del usuario al chat
+    // Agregar el mensaje del usuario
     setMessages(prevMessages => [
       ...prevMessages,
       { text: userInput, fromBia: false }
     ]);
 
-    // Obtener la respuesta de la IA usando la librería OpenAI
-    const aiResponse = await getOpenAIResponse(userInput);
+    // Simular la respuesta de BIA (aquí se puede integrar la IA real)
+    setTimeout(() => {
+      setMessages(prevMessages => [
+        ...prevMessages,
+        { text: "¡Claro! BIA está aquí para ayudarte a ahorrar y simplificar tus finanzas. ¿Qué te gustaría saber?", fromBia: true }
+      ]);
+    }, 1000);
 
-    // Agregar la respuesta de la IA al chat
-    setMessages(prevMessages => [
-      ...prevMessages,
-      { text: aiResponse, fromBia: true }
-    ]);
-
-    // Limpiar el input
+    // Limpiar el input después de enviar el mensaje
     setUserInput('');
   };
+
+  // Scroll al final del chat cada vez que el mensaje cambie
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
   return (
     <div className="chat-container">
@@ -44,9 +50,14 @@ const ChatWithBIA = () => {
         <div className="messages">
           {messages.map((message, index) => (
             <div key={index} className={`message ${message.fromBia ? 'bia-message' : 'user-message'}`}>
-              {message.text}
+              {/* Aquí usamos dangerouslySetInnerHTML para permitir saltos de línea */}
+              <div 
+                className="message-text" 
+                dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, '<br />') }} 
+              />
             </div>
           ))}
+          <div ref={messagesEndRef} /> {/* Ref para hacer scroll al final */}
         </div>
 
         {/* Input de mensaje */}
