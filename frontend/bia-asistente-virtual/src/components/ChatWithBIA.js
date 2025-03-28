@@ -6,10 +6,10 @@ const ChatWithBIA = () => {
     { 
       text: "¡Genial, Jasmin, te acompañaré en este camino! 🎉 Para ayudarte mejor, me gustaría conocer un poco más sobre tu situación.\n" +
             "📌 ¿Cómo quieres empezar?\n" +
-            "* Puedo analizar tus ingresos y gastos para sugerirte un plan personalizado.\n" +
-            "* Puedes contarme a qué te dedicas y yo te ayudo a estructurar un ahorro adaptado a tu flujo de ingresos.\n" +
-            "* Si tienes una meta de ahorro o inversión en mente, podemos crear juntas un plan para alcanzarlo.\n" +
-            "* O si prefieres, puedo explicarte más sobre cómo funciona todo esto antes de que tomes una decisión.",
+            "1. Puedo analizar tus ingresos y gastos para sugerirte un plan personalizado.\n" +
+            "2. Puedes contarme a qué te dedicas y yo te ayudo a estructurar un ahorro adaptado a tu flujo de ingresos.\n" +
+            "3. Si tienes una meta de ahorro o inversión en mente, podemos crear juntas un plan para alcanzarlo.\n" +
+            "4. O si prefieres, puedo explicarte más sobre cómo funciona todo esto antes de que tomes una decisión.",
       fromBia: true 
     }
   ]);
@@ -50,11 +50,7 @@ const ChatWithBIA = () => {
         <div className="messages">
           {messages.map((message, index) => (
             <div key={index} className={`message ${message.fromBia ? 'bia-message' : 'user-message'}`}>
-              {/* Aquí usamos dangerouslySetInnerHTML para permitir saltos de línea */}
-              <div 
-                className="message-text" 
-                dangerouslySetInnerHTML={{ __html: message.text.replace(/\n/g, '<br />') }} 
-              />
+              {message.text}
             </div>
           ))}
           <div ref={messagesEndRef} /> {/* Ref para hacer scroll al final */}
